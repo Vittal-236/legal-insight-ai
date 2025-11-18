@@ -1,0 +1,7 @@
+ibm-watson
+pandas
+pdfplumber
+docx2txt
+streamlit
+python-dotenv
+Flask

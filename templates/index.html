@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Insight Extractor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <main>
+        <div class="header">
+            <h1>Legal Document Insight Extractor ⚖️</h1>
+            <p>Upload a PDF, DOCX, or TXT file to analyze its content.</p>
+        </div>
+        
+        <form id="upload-form">
+            <label for="file-input" class="file-label">
+                <span id="file-name-span">Click to select a document...</span>
+                <span class="file-button">Browse File</span>
+            </label>
+            <input type="file" id="file-input" name="file" accept=".pdf,.docx,.txt">
+            
+            <button type="submit" id="analyze-button">Analyze Document</button>
+        </form>
+
+        <div id="loading-spinner" class="hidden">
+            <div class="spinner"></div>
+            <p>Analyzing document, this may take a moment...</p>
+        </div>
+
+        <div id="error-message" class="alert alert-error hidden">
+            </div>
+        
+        <div id="results-container" class="hidden">
+            <h2>Analysis Results</h2>
+            <div class="results-grid">
+                </div>
+        </div>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
